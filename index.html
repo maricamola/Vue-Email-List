@@ -20,7 +20,13 @@
 </head>
 <body>
   <div id="app">
-    
+    <h1>Indirizzi email casuali:</h1>
+
+    <p v-if="mails.length < limit">Loading ...</p>
+      <ul v-else class="list-group">
+        <li v-for="email in mails" class="list-group-item">
+          {{ email }}</li>
+
   </div>
   
 
